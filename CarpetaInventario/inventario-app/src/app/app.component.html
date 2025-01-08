@@ -1,0 +1,27 @@
+<div class="container">
+        <!-- BARRA DE NAVEGACIÓN -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(0, 2, 146);">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="productos">Sistema de Inventario</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="productos" routerLinkActive="active">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="agregar-producto" routerLinkActive="active">Agregar Producto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Hecho por Mario</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
