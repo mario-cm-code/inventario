@@ -16,14 +16,14 @@
         </thead>
         <tbody>
           <tr *ngFor="let producto of productos">
-            <th scope="row">{{producto.idProducto}}</th>
+            <th scope="row">{{producto.id_producto}}</th>
             <td>{{producto.descripcion}}</td>
             <td>{{producto.precio}}</td>
             <td>{{producto.existencia}}</td>
             <td class="text-center">
               <div>
-                <button (click)="editarProducto(producto.idProducto)" class="btn btn-warning btn-sm me-3">Editar</button>
-                <button (click)="eliminarProducto(producto.idProducto)" class="btn btn-danger btn-sm me-3">Eliminar</button>
+                <button (click)="editarProducto(producto.id_producto)" class="btn btn-warning btn-sm me-3">Editar</button>
+                <button (click)="eliminarProducto(producto.id_producto)" class="btn btn-danger btn-sm me-3">Eliminar</button>
               </div>
             </td>
           </tr>
